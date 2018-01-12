@@ -1,11 +1,17 @@
 variable "AWS_REGION" {
   default = "eu-east-1"
 }
+variable "VPC_ID" {
+  default = "vpc-74ce420c"
+}
+variable "SUBNET_ID" {
+  default = "subnet-3c414130"
+}
 variable "PATH_TO_PRIVATE_KEY" {
-  default = "mykey"
+  default = "mrgkey"
 }
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "mykey.pub"
+  default = "mrgkey.pub"
 }
 variable "AMIS" {
   type = "map"

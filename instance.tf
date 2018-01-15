@@ -9,7 +9,7 @@ resource "aws_instance" "example" {
   vpc_security_group_ids = ["${aws_security_group.allow-ssh.id}"]
 
   # the public SSH key
-  key_name = "mykeypair"
+  key_name = "rgtest-key"
 
   # user data
   user_data = "${data.template_cloudinit_config.cloudinit-example.rendered}"

@@ -1,5 +1,5 @@
 variable "AWS_REGION" {
-  default = "eu-east-1"
+  default = "us-east-1"
 }
 variable "VPC_ID" {
   default = "vpc-74ce420c"
@@ -24,3 +24,4 @@ variable "AMIS" {
 variable "INSTANCE_DEVICE_NAME" {
   default = "/dev/xvdh"
 }
+

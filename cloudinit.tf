@@ -5,7 +5,7 @@ data "template_file" "init-script" {
   }
 }
 data "template_file" "shell-script" {
-  template = "${file("scripts/volumes.sh")}"
+  template = "${file("scripts/startcontainer.sh")}"
   vars {
     DEVICE = "${var.INSTANCE_DEVICE_NAME}"
   }

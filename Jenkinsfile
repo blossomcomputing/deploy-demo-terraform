@@ -12,7 +12,7 @@ node {
     }
     stage('Terminate') {
         input "Terminate terraform managed instances?"
-        sh "/usr/local/bin/terraform destroy -auto-approve"
+        sh "/usr/local/bin/terraform destroy -force"
     }
 
     

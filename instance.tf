@@ -13,11 +13,5 @@ resource "aws_instance" "example" {
 
   # user data
   user_data = "${data.template_cloudinit_config.cloudinit-example.rendered}"
-  
-  provisioner "remote-exec" {
-    inline = [
-      "sudo docker run -d -p 8080:8080 rajeshgopal/rg-tomcat2:latest",
-    ]
-  }
 
 }

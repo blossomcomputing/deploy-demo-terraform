@@ -2,6 +2,7 @@ data "template_file" "init-script" {
   template = "${file("scripts/init.cfg")}"
   vars {
     REGION = "${var.AWS_REGION}"
+    docker_image = "${var.DOCKER_IMAGE}"
   }
 }
 data "template_file" "shell-script" {

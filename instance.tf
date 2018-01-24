@@ -13,5 +13,9 @@ resource "aws_instance" "example" {
 
   # user data
   user_data = "${data.template_cloudinit_config.cloudinit-example.rendered}"
+  
+  tags {
+    Name = "SpringBootApp"
+  }
 
 }

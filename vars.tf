@@ -24,4 +24,7 @@ variable "AMIS" {
 variable "INSTANCE_DEVICE_NAME" {
   default = "/dev/xvdh"
 }
+variable "DOCKER_IMAGE" {
+  default = "rajeshgopal/rg-tomcat2:latest"
+}
 
